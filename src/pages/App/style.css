@@ -1,0 +1,95 @@
+.container {
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+
+.container header {
+  margin-bottom: 10rem;
+}
+
+.container header h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.container header form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container header input {
+  font-size: 1.8rem;
+
+  background: none;
+  color: #fafafa;
+
+  border: 0.1rem solid #fafafa;
+  border-radius: 0.5rem;
+
+  padding: 2rem;
+}
+
+.container header input:focus {
+  outline: 0;
+}
+
+.container header input::placeholder {
+  color: #fafafa;
+}
+
+.container header button {
+  background: #fafafa;
+  color: #0c0c0;
+
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+
+  padding: 2rem;
+
+  border: none;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+
+  transition: all 200ms;
+}
+
+.container header button:hover {
+  transform: scale(1.05);
+}
+
+.container header input.placeholder {
+  color: #fafafa;
+}
+
+.container .user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .user-card .user-avatar {
+  width: 20rem;
+  border-radius: 20rem;
+
+  margin-bottom: 2rem;
+}
+
+.container .user-card .user-name {
+  font-size: 3rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.container .user-card .user-bio {
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
