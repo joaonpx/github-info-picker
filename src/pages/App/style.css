@@ -5,12 +5,11 @@
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 10rem;
 
   text-align: center;
-}
 
-.container header {
-  margin-bottom: 10rem;
+  padding-inline: 10rem;
 }
 
 .container header h1 {
@@ -18,7 +17,7 @@
   margin-bottom: 2rem;
 }
 
-.container header form {
+.container header .wrapper {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -30,7 +29,7 @@
   background: none;
   color: #fafafa;
 
-  border: 0.1rem solid #fafafa;
+  border: 0.2rem solid hsla(0, 0%, 98%, 0.4);
   border-radius: 0.5rem;
 
   padding: 2rem;
@@ -38,10 +37,14 @@
 
 .container header input:focus {
   outline: 0;
+
+  border-color: hsla(0, 0%, 98%);
 }
 
 .container header input::placeholder {
   color: #fafafa;
+
+  filter: brightness(0.4);
 }
 
 .container header button {
@@ -59,25 +62,25 @@
 
   cursor: pointer;
 
-  transition: all 200ms;
+  transition: filter 200ms;
 }
 
 .container header button:hover {
-  transform: scale(1.05);
-}
-
-.container header input.placeholder {
-  color: #fafafa;
+  filter: brightness(0.8);
 }
 
 .container .user-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  width: 40%;
 }
 
 .container .user-card .user-avatar {
   width: 20rem;
+
+  border: 0.2rem solid hsla(0, 0%, 98%, 0.4);
   border-radius: 20rem;
 
   margin-bottom: 2rem;
@@ -91,5 +94,11 @@
 
 .container .user-card .user-bio {
   font-size: 1.5rem;
-  opacity: 0.5;
+  filter: brightness(0.6);
+}
+
+@media (max-width: 951px) {
+  .container .user-card {
+    width: 100%;
+  }
 }
